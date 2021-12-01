@@ -9,7 +9,8 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
-    @State var emojis = [".",".",".",".",".",".",".",".",".",".",".",".",".",".",".",".",".",".",".",".",".","."]
+    @State var emojis = ["🚲","🚂","🚁","🚜","🚕","🏎","🚑","🚓","🚒","✈️","🚀","⛵️","🛸","🛶"]
+    
     @State var vehicles = ["🚲","🚂","🚁","🚜","🚕","🏎","🚑","🚓","🚒","✈️","🚀","⛵️","🛸","🛶"]
    
     @State var buildings =
@@ -56,7 +57,7 @@ struct ContentView: View {
             vehicles.shuffle()
         } label: {
             VStack{
-                Image("car")
+                Image(systemName: "car")
                 Text("Vehicles").font(.body)
             }
         }
@@ -69,7 +70,7 @@ struct ContentView: View {
             buildings.shuffle()
         } label: {
             VStack{
-                Image("building.2.crop.circle.fill")
+                Image(systemName: "building.2.crop.circle.fill")
                 Text("Buildings").font(.body)
             }
         }
@@ -82,7 +83,7 @@ struct ContentView: View {
             tech.shuffle()
         } label: {
             VStack{
-                Image("phone")
+                Image(systemName: "phone")
                 Text("Electronics").font(.body)
             }
         }
